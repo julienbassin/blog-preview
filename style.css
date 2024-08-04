@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root{
+    --color__primary-1: #F4D04E;
+    --fs-medium: #6B6B6B;
+    --fs-bold: #111111;
+}
+
+body, html{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color__primary-1);
+    font-size: 16px;
+    font-family: 'Figtree', sans-serif;
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+
+.blog{
+    width: 20.4375rem;
+    padding: var(--spacing-200, 1.5rem);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-200, 1.5rem);
+    border-radius: 1.25rem;
+    border: 1px solid var(--color-gray-950, #111);
+    background: var(--color-white, #FFF);
+    box-shadow: 8px 8px 0px 0px #000;
+}
+
+.img-blog{
+    width: 100%;
+    border-radius: 0.625rem;
+}
+
+.label-blog{
+    display: flex;
+    max-width: fit-content;
+    padding: var(--spacing-50, 0.25rem) var(--spacing-150, 0.75rem);
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-100, 0.5rem);
+
+    color: var(--color-gray-950, #111);
+    font-family: Figtree;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%; /* 1.125rem */
+
+    border-radius: var(--spacing-50, 0.25rem);
+    background: var(--color-yellow, #F4D04E);
+}
+
+.date-blog{
+    color: var(--color-gray-950, #111);
+    font-family: Figtree;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 1.125rem */
+}
+
+.title-blog{
+    align-self: stretch;
+
+    color: var(--color-gray-950, #111);
+    font-family: Figtree;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%; /* 1.875rem */
+}
+
+.title-blog:hover{
+    color: var(--color-yellow, #F4D04E);
+}
+
+.desc-blog{
+    align-self: stretch;
+    color: var(--color-gray-500, #6B6B6B);
+    font-family: Figtree;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 1.3125rem */
+}
+
+.blog-author{
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-150, 0.75rem);
+}
+
+.author-img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.author-name{
+    color: var(--color-gray-950, #111);
+
+    /* text-preset-3-bold */
+    font-family: Figtree;
+    font-size: var(--font-size-text-preset-3, 0.875rem);
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%; /* 1.3125rem */
+}
+
+@media (min-width: 768px) {
+    .blog{
+        width: 24rem;
+    }
+
+    .label-blog{
+        font-size: 1rem;
+    }
+
+    .title-blog{
+        font-size: 1.5rem;
+    }
+
+    .desc-blog{
+        font-size: 1rem;
+    }
+
+    .author-img {
+        width: 3rem; /* Ajustez la taille de l'image de l'auteur */
+        height: 3rem;
+    }
+
+    .author-name {
+        font-size: 1rem;
+    }
+
+}
